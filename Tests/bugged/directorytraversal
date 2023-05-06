@@ -1,0 +1,5 @@
+import os
+
+path = "../secret/passwords.txt"
+with open(path, 'r') as f:
+    passwords = f.readlines()
