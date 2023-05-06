@@ -1,0 +1,1 @@
+b = open("C:/Users/foo/OneDrive/Desktop/loop.txt","r")
