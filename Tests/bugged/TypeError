@@ -1,0 +1,3 @@
+input = input("Enter")
+str = repr(input)
+z = "hello" + str 
