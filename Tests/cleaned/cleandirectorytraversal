@@ -1,0 +1,5 @@
+import os
+
+path = "data/files/data.txt"
+with open(path, 'r') as f:
+    data = f.readlines()
