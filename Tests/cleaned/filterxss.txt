@@ -1,0 +1,9 @@
+import flask
+from html import escape
+
+app = flask.Flask(__name__)
+
+@app.route('/search')
+def search():
+    query = flask.request.args.get('query')
+    return '<h1>Search results for: {}</h1>'.format(escape(query))
