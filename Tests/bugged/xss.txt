@@ -1,0 +1,12 @@
+
+import flask
+
+app = flask.Flask(__name__)
+
+@app.route('/search')
+def search():
+    query = flask.request.args.get('query')
+    return f'<h1>Search results for: {query}</h1><script>alert("XSS attack!");</script>'
+
+
+
